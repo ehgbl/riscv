@@ -13,14 +13,14 @@ public:
     void reset();
     
 private:
-    // Pipeline stages
+    
     void fetch();
     void decode();
     void execute();
     void memory();
     void writeback();
     
-    // Pipeline registers
+    // Registers
     struct PipelineReg {
         uint32_t pc;
         uint32_t instruction;
@@ -34,7 +34,7 @@ private:
         PipelineReg memory_writeback;
     } pipeline;
     
-    // Components
+    
     std::unique_ptr<BranchPredictor> branch_predictor;
     std::unique_ptr<Cache> icache;
     std::unique_ptr<Cache> dcache;
@@ -42,7 +42,7 @@ private:
     // Register file
     std::array<uint32_t, 32> registers;
     
-    // Performance counters
+    // Counters
     struct Metrics {
         uint64_t total_instructions;
         uint64_t cycles;
