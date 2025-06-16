@@ -27,38 +27,3 @@ A modern RISC-V core implementation focusing on the RV32I base integer instructi
 │   ├── Forwarding Unit
 │   └── Cache System
 └── Visualization Tools
-```
-
-## Performance Metrics
-- IPC (Instructions Per Cycle)
-- Branch prediction accuracy
-- Cache hit/miss rates
-- Pipeline stall statistics
-- Resource utilization
-
-## Building and Running
-```bash
-mkdir build && cd build
-cmake ..
-make
-./riscv-sim <program.hex>
-```
-
-## Testing
-```bash
-# Run unit tests
-make test
-
-# Run performance benchmarks
-./run_benchmarks.sh
-```
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
